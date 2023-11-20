@@ -1,0 +1,111 @@
+:root {
+  --outrageous-orange-50: #fef4f2;
+  --outrageous-orange-100: #fee7e2;
+  --outrageous-orange-200: #fed3ca;
+  --outrageous-orange-300: #fcb4a5;
+  --outrageous-orange-400: #f78972;
+  --outrageous-orange-500: #ee6043;
+  --outrageous-orange-600: #db4627;
+  --outrageous-orange-700: #b8371d;
+  --outrageous-orange-800: #98311c;
+  --outrageous-orange-900: #7f2e1d;
+  --outrageous-orange-950: #45140a;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.bg-orange {
+  background-color: var(--outrageous-orange-50);
+  /* background-color: #fff7f6; */
+}
+
+.font-orange {
+  color: var(--outrageous-orange-500);
+}
+
+.section-title-hr {
+  width: 175px;
+  height: 1px;
+  border: 2px solid var(--outrageous-orange-500);
+  background-color: var(--outrageous-orange-500);
+  display: block;
+  opacity: 1;
+}
+
+.btn-custom-orange {
+  background-color: var(--outrageous-orange-500);
+  color: #fff;
+  border: none;
+}
+
+.btn-custom-orange:hover {
+  background-color: var(--outrageous-orange-600);
+  color: #fff;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: var(--outrageous-orange-700);
+  color: #fff;
+}
+
+.btn-custom-orange:active,
+.btn-custom-orange:focus {
+  background-color: var(--outrageous-orange-700);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-bg-orange {
+  color: #fff !important;
+  background-color: var(--outrageous-orange-500);
+}
+
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  /* background-color: hsl(217, 88.2%, 90%); */
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  resize: none;
+}

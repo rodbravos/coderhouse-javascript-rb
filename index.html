@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODERHOUSE - SEGUNDO ENTREGABLE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;900&family=Raleway:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+      integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid bg-success bg-opacity-25">
+      <div class="container py-4 text-center">
+        <div class="row">
+          <h4 class="col-md-6 fw-bold raleway my-auto">
+            Coderhouse - Curso Javascript
+          </h4>
+          <h5 class="col-md-6 fw-bold raleway my-auto">
+            Rodrigo Bravo Solis - Entregable Nº2
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row bg-light">
+        <div class="col-md-12 text-center py-4">
+          <h2 class="fw-bold raleway">Bitácora de Trabajo remoto</h2>
+        </div>
+
+        <div class="col-md-6 py-5 px-4">
+          <div class="card">
+            <div class="card-header text-bg-orange">
+              <h5 class="card-title fw-bold my-auto">Registro de gestiones</h5>
+            </div>
+            <div class="card-body">
+              <div id="alert"></div>
+
+              <form action="" id="form_gestion">
+                <div class="mb-3">
+                  <label for="select_gestiones" class="form-label fw-bold">
+                    Tipo de gestión
+                  </label>
+                  <select class="form-select" id="select_gestiones">
+                    <option value="">Seleccione una opción</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="titulo_gestion" class="form-label fw-bold">
+                    Título gestión
+                  </label>
+                  <input
+                    type="text"
+                    name=""
+                    id="titulo_gestion"
+                    class="form-control"
+                    placeholder="Descripción general"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="detalle_gestion" class="form-label fw-bold">
+                    Detalle gestión
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="detalle_gestion"
+                    rows="4"
+                  ></textarea>
+                </div>
+
+                <div class="py-2">
+                  <button type="submit" class="btn btn-custom-orange">
+                    Guardar registro
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 py-5 px-5">
+          <h4 class="fw-bold text-center">Historial de gestiones</h4>
+          <hr class="section-title-hr mx-auto" />
+
+          <section class="pt-5" id="seccion">
+            <div id="mensaje_incial"></div>
+            <ul class="timeline-with-icons" id="historial_gestiones"></ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
